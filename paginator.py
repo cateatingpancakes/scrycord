@@ -10,7 +10,7 @@ class Paginator(discord.ui.View):
     async def prev_callback(self, button: discord.ui.Button, interaction: discord.Interaction):
         if self.page > 0:
             self.page -= 1
-            await interaction.response.edit_message(embed=self.pages[self.page])
+            await interaction.response.edit_message(f"Showing result {self.page} of {self.pages}", embed=self.pages[self.page])
         else:
             pass
 
@@ -18,6 +18,6 @@ class Paginator(discord.ui.View):
     async def next_callback(self, button: discord.ui.Button, interaction: discord.Interaction):
         if self.page < len(self.pages) - 1:
             self.page += 1
-            await interaction.response.edit_message(embed=self.pages[self.page])
+            await interaction.response.edit_message(f"Showing result {self.page} of {self.pages}", embed=self.pages[self.page])
         else:
             pass
