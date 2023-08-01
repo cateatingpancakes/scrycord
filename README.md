@@ -3,8 +3,6 @@ Scryfall provides [bots](https://scryfall.com/bots) for Discord and Slack that c
 
 If you want to use this bot on your Discord server, it's preferable that you host it yourself, which you can do by following Discord's [tutorial](https://discord.com/developers/docs/intro) and creating a file named `token` containing your secret token to run the bot.
 
-Note that, if you decide to use the link above, the bot might not always be online, and that if your query is especially broad, the bot might not return all cards as the Scryfall API itself will not return all the cards.
-
 # disclaimers
 Scrycord is not, in any way, approved or endorsed by Scryfall.
 
